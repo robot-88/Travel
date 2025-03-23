@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Beach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url('image.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 60px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .contact, .about, .services {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .contact p, .about p, .services p {
+            margin: 5px 0;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .card a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+    <div class="container" id="home">
+        <div class="content">
+            <h1>Welcome to Paradise</h1>
+            <p>Relax and enjoy the beautiful Beach and Mountain Views.</p>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>We provide exceptional travel services tailored for all of our customers. From luxurious experiences to end-to-end travel support, we ensure your journey is seamless and unforgettable.</p>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="services">
+            <h2>Our Services</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="https://r.search.yahoo.com/rdclks/dWU9MDN2ZXQzOWp1MTF1biZ1dD0xNzQyNzY4MDg3NDczJnVvPTczNTk4ODgwMDQyMzQzJmx0PTImcz0xJmVzPUgzVVEuN3NlLmdTcHJsVk5uQVpqMGxTMmFqM1lJQmJsUmZzcUNLUE1NZWtiTlFBem1oX1haTXh5aUJ5cTJKLm5QR0RYQm83dVJCc1pVOHl6/RV=2/RE=1745360087/RO=14/RU=https%3a%2f%2fwww.bing.com%2faclick%3fld%3de8eOux3DiPY5FUQEXfHNxJNDVUCUwsKho9khIaVD2opiZWRQ6LlZQIOP_51H8r8I1LT2XFT3GUz45RxmkRmfFF5ySIHU1g8p8JfV1lheGRBVPm9yk7vJdQlQNBj2TK1AKLxiampcbEiPgypg7UIvo3v2RWVlEMw2g8N3nC4Tt_sWgb3NjLjPmPALEKiyhwhNOGwTU-zA%26u%3daHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MTU1NDM3NTM4OCUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODg1NTMyMDY3NiUyNmRzX2FfY2lkJTNkNjUxNjE3Mjc1MSUyNmRzX2FfY2FpZCUzZDIxMTI4NzI5NjQ5JTI2ZHNfYV9hZ2lkJTNkMTc4Nzc1NDY1NzE0JTI2ZHNfYV9saWQlM2Rrd2QtMTg2NTYwMjIlMjYlMjZkc19lX2FkaWQlM2Q3MzU5ODg4MDA0MjM0MyUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTczNTk5MDgxNTU2MzE5JTNhbG9jLTE4OCUyNiUyNmRzX2VfbmV0d29yayUzZG8lMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3Lmxhc3RtaW51dGUuY29tJTJmaG9saWRheXMlMmZlc19zcGFpbiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZExNTl9VS19EUF9hdXRvZmVlZC1TRV9ub25icmFuZF9EZXN0aW5hdGlvbi1CZWFjaF9FTi1JTlRfTWl4X0JpbmdfMSUyNmdjbGlkJTNkNDJkMTljZDMwZDVkMTQyMWU1Y2NmYjMzOGE4YTk1MmElMjZnY2xzcmMlM2QzcC5kcyUyNiUyNm1zY2xraWQlM2Q0MmQxOWNkMzBkNWQxNDIxZTVjY2ZiMzM4YThhOTUyYSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZExNTl9VS19EUF9hdXRvZmVlZC1TRV9ub25icmFuZF9EZXN0aW5hdGlvbi1CZWFjaF9FTi1JTlRfTWl4X0JpbmdfMSUyNnV0bV90ZXJtJTNkc3BhaW4lMjUyMHRyYXZlbCUyNnV0bV9jb250ZW50JTNkQ19FU19TcGFpbg%26rlid%3d42d19cd30d5d1421e5ccfb338a8a952a/RK=2/RS=xpz.FU.EfYcCmnWadF6gPaU3ngo-;_ylt=AwrhQjDXh.BniswL7IRXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA292LXRvcA--;_ylc=X3IDMgRydAMw?IG=0ae14230427944e1ba015b049d2188b2">
+                        <img src="spain.jpg" alt="Spain Vacation">
+                        <h3>Spain Vacation</h3>
+                        <p>Enjoy a vibrant trip to Spain with breathtaking beaches, historic cities, and delicious cuisine.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.eurocamp.co.uk/campsites/switzerland?&msclkid=f4ce411ab6e216484f1a26fa311deb24&utm_source=bing&utm_medium=cpc&utm_campaign=NB%20-%20Destination%20-%20Country%20-%20CO%20(SWI)%20-%20ECUK&utm_term=switzerland%20vacation&utm_content=NB%20-%20Destination%20-%20Country%20-%20CO%20(SWI)%20-%20ECUK&gclid=f4ce411ab6e216484f1a26fa311deb24&gclsrc=3p.ds">
+                        <img src="swiss.jpg" alt="Swiss Vacation">
+                        <h3>Swiss Vacation</h3>
+                        <p>Experience the stunning Swiss Alps, luxury resorts, and picturesque landscapes.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.loveholidays.com/sem/greece.html?WT.mc_id=pbi-1197368378509015-kwd-71537772716943:loc-4076&ch=des&network=o&msclkid=f7943c9682e31a0e433b5b760aa144b2&utm_source=bing&utm_medium=cpc&utm_campaign=DL2_Greece&utm_term=greece%20vacations&utm_content=DL2_Greece___Vacations_BMM">
+                        <img src="greece.jpg" alt="Greece Vacation">
+                        <h3>Greece Vacation</h3>
+                        <p>Explore ancient ruins, stunning islands, and crystal-clear waters in Greece.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:travel.support@tvl.com">travel.support@tvl.com</a></p>
+            <p>Phone: <a href="tel:+12345678912">+123-45678912</a></p>
+        </div>
+    </div>
+</body>
+</html>
